@@ -1,0 +1,20 @@
+
+Created by Joshua Wilkinson for CS286 Project 1 at SIUE
+
+To run the simulator run the command
+
+python mipssim.py INPUTFILENAME OUTPUTFILENAME
+
+This will open INPUTFILENAME eg. t1.bin, t2.bin, t3.bin, or t4.bin
+there is no support for files with different names because the code 
+uses the name of the input file to determine what data to write to
+the output
+
+The OUTPUTFILENAME will be used to create a file OUTPUTFILENAME_sim.txt
+which records the cycle number, instruction address, instruction as text,
+the values of the registers, and the values in the data stack.
+
+OUTPUTFILENAME_dis.txt is also created, it contains the raw binary
+dissassembled into an instruction and parameters. The instructions
+after the break are converted into signed numbers and stored in memory.
+
